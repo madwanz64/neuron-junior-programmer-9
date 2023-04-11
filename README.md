@@ -10,3 +10,4 @@
 ## Catatan
 
 - Terdapat penambahan script FontAwesome untuk penambahan icon social media
+- Pengambilan font juga menggunakan css dari google fonts, sehingga tidak dilakukan deklarasi font-face secara manual
