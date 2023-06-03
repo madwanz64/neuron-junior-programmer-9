@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruitment Form</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,49 +27,54 @@
                 <img src="/img/logomark-sign.png" alt="Neuron 3.0 Start To Lead" height="32px" style="margin-bottom: 8px">
                 <h3 class="text-secondary" style="font-size: 24px; font-weight: 600;">Form Rekrutasi</h3>
                 <p style="font-size: 13px; line-height: 18px">Isi data di bawah ini sesuai dengan identitas diri Anda dan lowongan yang akan Anda pilih</p>
-                <form>
+                <form id="form-detail" style="margin-top: 16px">
                     <div class="form-group" style="margin-top: 10px">
                         <label for="fullname" class="form-label">Fullname <span style="color: red">*</span></label>
-                        <input type="text" name="fullname" id="fullname" placeholder="Masukkan nama" class="form-control">
+                        <input type="text" name="fullname" id="fullname" placeholder="Masukkan nama" class="form-control" required>
                     </div>
                     <div class="form-group" style="margin-top: 10px">
                         <label for="email" class="form-label">Email <span style="color: red">*</span></label>
-                        <input type="text" name="email" id="email" placeholder="Masukkan email" class="form-control">
+                        <input type="text" name="email" id="email" placeholder="Masukkan email" class="form-control" required>
                     </div>
                     <div class="form-group" style="margin-top: 10px">
                         <label for="phonenumber" class="form-label">Phone Number <span style="color: red">*</span></label>
-                        <input type="text" name="phonenumber" id="phonenumber" placeholder="Masukkan nomor telepon" class="form-control">
+                        <input type="text" name="phonenumber" id="phonenumber" placeholder="Masukkan nomor telepon" class="form-control" required>
                     </div>
                     <div class="form-group" style="margin-top: 10px">
                         <label for="vacancy" class="form-label">Vacancy <span style="color: red">*</span></label>
-                        <select name="vacancy" id="vacancy" class="form-control">
+                        <select name="vacancy" id="vacancy" class="form-control" required>
                             <option value="" disabled selected>- Pilih Lowongan -</option>
-                            <option value="WEB DEVELOPER">WEB DEVELOPER</option>
-                            <option value="MOBILE DEVELOPER">MOBILE DEVELOPER</option>
-                            <option value="DATABASE DEVELOPER">DATABASE DEVELOPER</option>
                         </select>
                     </div>
                     <div class="form-group" style="margin-top: 10px">
                         <label for="position" class="form-label">Position <span style="color: red">*</span></label>
-                        <select name="position" id="position" class="form-control">
+                        <select name="position" id="position" class="form-control" required>
                             <option value="" disabled selected>- Pilih Posisi -</option>
-                            <option value="BANDUNG">BANDUNG</option>
-                            <option value="JAKARTA">JAKARTA</option>
                         </select>
                     </div>
-                    <button type="submit" style="width: 100%; margin-top: 24px; padding: 8px 4px; background-color: rgb(30, 136, 229); color: white; border: none; font-weight: 500">Kirim</button>
+                    <button type="submit" style="width: 100%; margin-top: 24px; padding: 8px 4px; background-color: rgb(30, 136, 229); color: white; border: none; font-weight: 500; cursor: pointer">Kirim</button>
                 </form>
                 <div class="form-footer" style="text-align: center">
-                    <div id="social-media" style="margin-top: 24px; margin-bottom: 12px ">
-                        <a href="https://instagram.com/neuronworks" target="_blank"><i class="fa fa-instagram fa-fw fa-2x text-secondary" style=" margin: 0 5px"></i></a>
-                        <a href="https://www.youtube.com/@NeuronworksIndonesia" target="_blank"></a><i class="fa fa-youtube-play fa-fw fa-2x text-secondary" style="margin: 0 5px"></i></a>
-                        <a href="https://twitter.com/neuronworks" target="_blank"></a><i class="fa fa-twitter fa-fw fa-2x text-secondary" style="margin: 0 5px"></i></a>
-                        <a href="https://www.facebook.com/neuronworks/" target="_blank"></a><i class="fa fa-facebook-official fa-fw fa-2x text-secondary" style="margin: 0 5px"></i></a>
-                    </div>
+                    <ul id="social-media" style="margin-top: 24px; margin-bottom: 12px;">
+                        <li style="display: inline-block;">
+                            <a href="https://instagram.com/neuronworks" target="_blank"><i class="fa fa-instagram fa-fw fa-2x text-secondary" style=" margin: 0 5px"></i></a>
+                        </li>
+                        <li style="display: inline-block;">
+                            <a href="https://www.youtube.com/@NeuronworksIndonesia" target="_blank"><i class="fa fa-youtube-play fa-fw fa-2x text-secondary" style="margin: 0 5px"></i></a>
+                        </li>
+                        <li style="display: inline-block;">
+                            <a href="https://twitter.com/neuronworks" target="_blank"><i class="fa fa-twitter fa-fw fa-2x text-secondary" style="margin: 0 5px"></i></a>
+                        </li>
+                        <li style="display: inline-block;">
+                            <a href="https://www.facebook.com/neuronworks/" target="_blank"><i class="fa fa-facebook-official fa-fw fa-2x text-secondary" style="margin: 0 5px"></i></a>
+                        </li>
+                    </ul>
                     <a href="https://neuronworks.co.id">www.neuronworks.co.id</a>
                 </div>
             </section>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
