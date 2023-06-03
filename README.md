@@ -1,13 +1,11 @@
-# Training Junior Programmer 1
+# Training Junior Programmer 8
 
-1. Pelajari Modul HTML & CSS #1
-2. Buatkan tampilan berikut [Neuron Register Form](https://hrmis.neuron.id/recruitment/register/form), dengan menggunakan pure HTML & CSS
-3. Project yang telah dibuat, diupload ke github masing-masing
-4. Assign link github ke lokasi yang sudah disediakan
-5. Deadline, hari Jum'at, 14 April 2023
+1. Pelajari Modul JavaScript #1, #2, #3, #4
+2. Berdasarkan task HTML/CSS #1, buatlah proses penampilan data sesuai yang telah diisi;
+   - Menggunakan Javascript (pakai jQuery diperbolehkan).
+   - Pada inputan pilihan, sumber opsi yang ditampilkan menggunakan Array di javascript (tidak boleh secara langsung menggunakan &lt;option&gt;)
+   - Tampilkan hasil isian pada form beserta notifikasi sukses.
+3. Upload source code hasil pengerjaan ke github masing-masing
+4. Submit!
 
 
-## Catatan
-
-- Terdapat penambahan script FontAwesome untuk penambahan icon social media
-- Pengambilan font juga menggunakan css dari google fonts, sehingga tidak dilakukan deklarasi font-face secara manual
