@@ -33,6 +33,21 @@ select.form-control {
     padding: 10px 4px;
 }
 
+.form-control.is-invalid {
+    border: 1px solid red;
+}
+
+
+.form-group .invalid-feedback {
+    color: red !important;
+    font-size: smaller;
+}
+
+.form-group .helper {
+    color: grey;
+    font-size: smaller;
+}
+
 .bg-white {
     background-color: white;
 }

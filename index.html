@@ -30,30 +30,33 @@
                 <form id="form-detail" style="margin-top: 16px">
                     <div class="form-group" style="margin-top: 10px">
                         <label for="fullname" class="form-label">Fullname <span style="color: red">*</span></label>
-                        <input type="text" name="fullname" id="fullname" placeholder="Masukkan nama" class="form-control" required>
+                        <input type="text" name="fullname" id="fullname" placeholder="Masukkan nama" class="form-control">
                     </div>
                     <div class="form-group" style="margin-top: 10px">
                         <label for="email" class="form-label">Email <span style="color: red">*</span></label>
-                        <input type="text" name="email" id="email" placeholder="Masukkan email" class="form-control" required>
+                        <input type="text" name="email" id="email" placeholder="Masukkan email" class="form-control">
                     </div>
                     <div class="form-group" style="margin-top: 10px">
                         <label for="phonenumber" class="form-label">Phone Number <span style="color: red">*</span></label>
-                        <input type="text" name="phonenumber" id="phonenumber" placeholder="Masukkan nomor telepon" class="form-control" required>
+                        <input type="text" name="phonenumber" id="phonenumber" placeholder="Masukkan nomor telepon" class="form-control">
                     </div>
                     <div class="form-group" style="margin-top: 10px">
                         <label for="vacancy" class="form-label">Vacancy <span style="color: red">*</span></label>
-                        <select name="vacancy" id="vacancy" class="form-control" required>
+                        <select name="vacancy" id="vacancy" class="form-control">
                             <option value="" disabled selected>- Pilih Lowongan -</option>
                         </select>
                     </div>
                     <div class="form-group" style="margin-top: 10px">
                         <label for="position" class="form-label">Position <span style="color: red">*</span></label>
-                        <select name="position" id="position" class="form-control" required>
+                        <select name="position" id="position" class="form-control">
                             <option value="" disabled selected>- Pilih Posisi -</option>
                         </select>
                     </div>
                     <button type="submit" style="width: 100%; margin-top: 24px; padding: 8px 4px; background-color: rgb(30, 136, 229); color: white; border: none; font-weight: 500; cursor: pointer">Kirim</button>
                 </form>
+                <div id="form-result" style="margin-top: 16px"></div>
+
+
                 <div class="form-footer" style="text-align: center">
                     <ul id="social-media" style="margin-top: 24px; margin-bottom: 12px;">
                         <li style="display: inline-block;">
